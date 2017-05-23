@@ -63,12 +63,24 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DataTypes\Adresse.cs" />
+    <Compile Include="DataTypes\Branche.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Angebot\Angebot.cs" />
+    <Compile Include="Models\IUnternehmen.cs" />
+    <Compile Include="Models\Kunde\Kunde.cs" />
+    <Compile Include="Models\Lieferant\Lieferant.cs" />
+    <Compile Include="Models\Artikel\Identification\IIdentification.cs" />
+    <Compile Include="Models\Artikel\IArtikel.cs" />
+    <Compile Include="Models\Artikel\ManufacturingData\IManufacturingData.cs" />
+    <Compile Include="Models\Artikel\PhysicalDescription\IPhysicalDescription.cs" />
+    <Compile Include="Models\Artikel\PresentationData\IPresentationData.cs" />
+    <Compile Include="Models\Artikel\TradingData\ITradingData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -94,6 +106,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Auftrag\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
